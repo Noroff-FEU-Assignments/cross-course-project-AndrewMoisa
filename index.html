@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <title>RainyDays | Homepage</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/headerfooter.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/aafd0c0d38.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -27,87 +28,102 @@
             <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
         </nav>
     </div>
-    <div>
-        <hr class="headerLine">
-    </div>
+        <div>
+            <hr class="lineHeader">
+        </div>
     </header>
     
     <main>
     <section class="hero">
-        <!-- <img src="images/hero.png" alt=""> -->
+        <div class="heroText">
         <h1>RAINYDAYS</h1>
         <p>The new autumn colection it's here.</p>
-        <button>Read More</button>
+        <button>Read more</button>
+        </div>
     </section>
     <section>
         <h2>MEN TREDING</h2>
-        <div>
+        <div class="cardContainer">
+        <div class="cardJacket" onclick="location.href='#';" style="cursor: pointer;">
             <img src="images/jacket1.svg" alt="red jacket">
             <p>Kirkestiden men's shell jacket</p>
-            <p>699,-</p>
-
+            <span>699,-</span>
         </div>
-        <div>
+        <div class="cardJacket">
             <img src="images/jacket2.svg" alt="grey jacket">
             <p>Zuko hybrid jacket men</p>
-            <p>999,-</p>
+            <span>999,-</span>
         </div>
-        <div>
+        <div class="cardJacket">
             <img src="images/jacket3.svg" alt="black jacket">
             <p>Kirkestiden men's shell jacket</p>
-            <p>899,-</p>
+            <span>899,-</span>
         </div>
-        <div>
+        <div class="cardJacket">
             <img src="images/jacket4.svg" alt="brown jacket">
             <p>Crew Hooded shell jacket</p>
-            <p>799</p>
+            <span>799</span>
         </div>
+    </div>
     </section>
     <section>
         <h2>WOMENS TRENDING</h2>
-        <div>
+        <div class="cardContainer">
+        <div class="cardJacket">
             <img src="images/jacket5.svg" alt="grey jacket">
             <p>Kirkestinden men's shell jacket</p>
-            <p>699,-</p>
+            <span>699,-</span>
         </div>
-        <div>
+        <div class="cardJacket">
             <img src="images/jacket6.svg" alt="black jacket">
             <p>Kirkestiden men's shell jacket</p>
-            <p>899,-</p>
+            <span>899,-</span>
         </div>
-        <div>
+        <div class="cardJacket">
             <img src="images/jacket7.svg" alt="grey jacket">
             <p>Zuko hybrid jacket men</p>
-            <p>999,-</p>
+            <span>999,-</span>
         </div>
-        <div>
+        <div class="cardJacket">
             <img src="images/jacket8.svg" alt="brown jacket">
             <p>Crew Hooded shell jacket</p>
-            <p>799</p>
+            <span>799</span>
         </div>
     </section>
-    <section>
+    <section class="membership">
         <h2>MEMBERSHIP</h2>
-        <img src="images/nikeLeft.svg" alt="background image">
-        <img src="images/nikeRight.svg" alt="women and kid walking">
+        <p>Get discounts and acces our <br> outlet products.</p>
+        <button>Join now</button>
+    </div>
     </section>
     </main>
     <footer>
         <div>
-        <h3>Shipping</h3>
-        <p>Get free delivery for orders over 2000NOK</p>
+            <hr class="lineFooter">
         </div>
-        <div>
-            <h3>You can find us on</h3>
-            <i class="fa-brands fa-facebook fa-2xl"></i>
-            <i class="fa-brands fa-twitter fa-2xl"></i>
-            <i class="fa-brands fa-instagram fa-2xl"></i>
-        </div>
-        <div>
-            <h3>About us</h3>
-            <p>Privacy Statement</p>
-            <p>Sales conditions</p>
-            <p>Maintenance</p>
+        <div class="footerContainer">
+            <div class="shipping">
+                <h3>Shipping</h3>
+                <p>Get free delivery </p>
+                <p>for orders over</p>
+                <p>2000NOK</p>
+            </div>
+            <div class="socialMedia">
+                 <h3>You can find us on</h3>
+            <div class="socialIcons">
+                <i class="fa-brands fa-facebook fa-2xl"></i>
+                <i class="fa-brands fa-twitter fa-2xl"></i>
+                <i class="fa-brands fa-instagram fa-2xl"></i>
+            </div>
+            </div>
+             <div class="aboutUs">
+                <h3>About us</h3>
+                <div class="conditions">
+                    <p>Privacy Statement</p>
+                    <p>Sales conditions</p>
+                    <p>Maintenance</p>
+                </div>
+            </div>
         </div>
     </footer>
     

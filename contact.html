@@ -4,9 +4,76 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>RainyDays | Contact</title>
+    <link rel="stylesheet" href="css/headerfooter.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/aafd0c0d38.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    
+    <header>  
+        <div class="navContainer">
+            <div>
+                <a href="index.html" class="navLogo"><img src="images/logo.svg" alt="website logo"></a>
+             </div> 
+             <nav class="navMenu">
+                <a href="index.html">Men</a>
+                <a href="index.html">Womens</a>
+                <a href="index.html">Kids</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            </nav>
+        </div>
+            <div>
+                <hr class="lineHeader">
+            </div>
+    </header>
+    <main>
+        <img src="images/contact.svg" alt="">
+        <section>  
+        <h1>Please get in touch and our expert support team will answer all your questions.</h1>
+        <form class="form">
+            <label for="fullname">Full name</label>
+            <input type="text" name="fullname" id="fullname" required>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required>
+            <label for="yourMsg">Your message</label required>
+            <textarea name="yourMs" id="yourMsg" cols="60" rows="13" minlength="50" required></textarea>
+            <button type="submit" value="Send">Send</button>
+        </form> 
+        </section>
+    </main>
+    <footer>
+        <div>
+            <hr class="lineFooter">
+        </div>
+        <div class="footerContainer">
+            <div class="shipping">
+                <h3>Shipping</h3>
+                <p>Get free delivery </p>
+                <p>for orders over</p>
+                <p>2000NOK</p>
+            </div>
+            <div class="socialMedia">
+                 <h3>You can find us on</h3>
+            <div class="socialIcons">
+                <i class="fa-brands fa-facebook fa-2xl"></i>
+                <i class="fa-brands fa-twitter fa-2xl"></i>
+                <i class="fa-brands fa-instagram fa-2xl"></i>
+            </div>
+            </div>
+             <div class="aboutUs">
+                <h3>About us</h3>
+                <div class="conditions">
+                    <p>Privacy Statement</p>
+                    <p>Sales conditions</p>
+                    <p>Maintenance</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

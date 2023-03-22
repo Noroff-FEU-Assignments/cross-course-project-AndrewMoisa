@@ -1,0 +1,123 @@
+body{
+    font-family: 'Inter', sans-serif;
+    color: #0A3641;
+    margin: auto 85px;
+}
+
+main{
+    display: flex;
+}
+
+h1{
+    margin: 30px 0px 10px 0px;
+}
+
+.jackets{
+    flex: 1;
+}
+
+.totalprice{
+    flex: 1;
+}
+
+.jacketContainer{
+    display: flex;
+    margin: 20px 0px;
+    gap: 40px
+}
+
+.jacketImg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F5F5F5;
+    max-width: 20%;
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.jacketImg img, .jacketText{
+    width: 100%;
+}
+
+.jacketText p{
+    font-size: 1.6rem;
+    margin: 5px auto;
+}
+
+.jacketType{
+    font-size: 1.875rem;
+}
+
+.jacketType span{
+    font-weight: bold;
+}
+
+.rightSide{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.totalprice{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.totalPriceContainer{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin-top: 80px;
+    background-color: #EEE;
+    width: 60%;
+    height: 70%;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.totalPriceContainer p:first-child{
+    font-size: 2.125rem;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+.totalPriceContainer p:last-child{
+    text-align: center;
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+
+.totalPriceContainer button{
+    display: block;
+    width: 100%;
+    padding: 12px 0;
+    margin: 20px 0 0 0;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+.firstBtn{
+    background-color: #4AAFF8;
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
+
+.secondBtn{
+    background-color: white;
+    color: #4AAFF8;
+    border-radius: 5px;
+    border:1px solid #4AAFF8;
+}
+
+.firstBtn:hover{
+    background-color: #3886BF
+}
+
+.secondBtn:hover{
+    background-color: #4AAFF8;
+    color: white;
+}
