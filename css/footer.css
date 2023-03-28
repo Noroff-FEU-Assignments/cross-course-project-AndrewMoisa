@@ -1,0 +1,21 @@
+.lineFooter{
+    border: 1.5px solid #0A3641;
+    border-radius: 5px;
+    
+}
+
+.footerContainer{
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+}
+
+.socialIcons{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.conditions, .shipping p{
+    line-height: 5px;
+}

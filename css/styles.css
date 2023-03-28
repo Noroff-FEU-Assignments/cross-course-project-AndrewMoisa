@@ -1,0 +1,612 @@
+@import url("header.css");
+@import url(footer.css);
+
+body{
+    font-family: 'Inter', sans-serif;
+    color: #0A3641;
+    margin: auto 85px;
+}
+
+/* INDEX */
+
+.hero {
+    background-image: url(/images/hero.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    height:320px ;
+    line-height: 0px;
+    margin-top: 30px;
+    border-radius: 5px;
+    filter: drop-shadow(0px 5px 4px rgba(0, 0, 0, 0.25));
+}
+.heroText{
+    padding: 150px 40px;
+}
+
+.hero h1{
+    font-size: 2.5rem;
+    margin-bottom: 23px;
+}
+
+.hero p{
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+.hero button{
+    color: white;
+    background-color: transparent;
+    border-radius: 6px;
+    padding: 6px;
+    border: 1px solid white;
+    letter-spacing: 1.5px;
+    
+}
+
+.hero button:hover{
+    background-color: black;
+    border: 1px solid black;
+    cursor: pointer;
+    
+}
+
+.cardContainer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.cardJacket{
+    background-color: #F5F5F5;
+    max-width: 257px;
+    /* height: 320px; */
+    padding:10px 0;
+    font-weight: 500;
+    text-align: center;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.cardJacket span{
+    font-weight: bold;
+}
+
+.membership{
+    background-image: url(/images/nike.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    height:200px ;
+    border-radius: 5px;
+    overflow: visible;
+    color: black;
+    margin: 70px 0 50px 0;
+    filter: drop-shadow(0px 5px 4px rgba(0, 0, 0, 0.25));
+}
+
+.membership h2{
+    line-height: 0;
+    font-weight: bold;
+    font-size: 2.8125rem;
+}
+
+.membership p{
+    padding-left: 40px;
+    font-size: 2rem;
+    font-weight: 200;
+}
+
+.membership button{
+    margin-left: 40px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    border:1px solid black;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    padding: 5px;
+}
+
+/* INDEX */
+
+/* ABOUT */
+.aboutContainer img{
+    max-width: 100%;
+    margin-top: 30px;
+}
+.aboutContainer h1{
+    text-align: center;
+    font-size: 2.25rem;
+}
+
+.aboutContainer p{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 300;
+    margin-bottom: 50px;
+}
+/* ABOUT */
+
+/* CART */
+.cartContainer{
+    display: flex;
+}
+
+.cartContainer h1{
+    margin: 30px 0px 10px 0px;
+}
+
+.jackets{
+    flex: 1;
+}
+
+.totalprice{
+    flex: 1;
+}
+
+.jacketContainer{
+    display: flex;
+    margin: 20px 0px;
+    gap: 40px
+}
+
+.jacketImg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F5F5F5;
+    max-width: 20%;
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.jacketImg img, .jacketText{
+    width: 100%;
+}
+
+.jacketText p{
+    font-size: 1.6rem;
+    margin: 5px auto;
+}
+
+.jacketType{
+    font-size: 1.875rem;
+}
+
+.jacketType span{
+    font-weight: bold;
+}
+
+.rightSide{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.totalprice{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.totalPriceContainer{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin-top: 80px;
+    background-color: #EEE;
+    width: 60%;
+    height: 70%;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.totalPriceContainer p:first-child{
+    font-size: 2.125rem;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+.totalPriceContainer p:last-child{
+    text-align: center;
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+
+.totalPriceContainer button{
+    display: block;
+    width: 100%;
+    padding: 12px 0;
+    margin: 20px 0 0 0;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+.firstBtn{
+    background-color: #4AAFF8;
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
+
+.secondBtn{
+    background-color: white;
+    color: #4AAFF8;
+    border-radius: 5px;
+    border:1px solid #4AAFF8;
+}
+
+.firstBtn:hover{
+    background-color: #3886BF
+}
+
+.secondBtn:hover{
+    background-color: #4AAFF8;
+    color: white;
+}
+/* CART  */
+
+/* CHECKOUT  */
+.checkoutContainer{
+    display: flex;
+    gap:250px;
+}
+
+.form{
+    flex: 1;
+}
+
+.form form{
+    display: flex;
+    flex-direction: column;
+}
+
+.form form input{
+    display: block;
+    border: 1px solid #4AAFF8;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin:5px 0px 15px 0px;
+}
+
+.inlineform{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.inlineInput{
+    display: flex;
+    align-items: baseline;
+    gap: 5px;
+    
+}
+
+.totalprice{ 
+    flex: 1;
+}
+
+.totalprice{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.totalPriceContainer{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin-top: 80px;
+    background-color: #EEE;
+    width: 60%;
+    height: 70%;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.totalPriceContainer p:first-child{
+    font-size: 2.125rem;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+.totalPriceContainer p:last-child{
+    text-align: center;
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+
+.totalPriceContainer button{
+    display: block;
+    width: 100%;
+    padding: 12px 0;
+    margin: 20px 0 0 0;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+.firstBtn{
+    background-color: #4AAFF8;
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
+
+.secondBtn{
+    background-color: white;
+    color: #4AAFF8;
+    border-radius: 5px;
+    border:1px solid #4AAFF8;
+}
+
+.firstBtn:hover{
+    background-color: #3886BF
+}
+
+.secondBtn:hover{
+    background-color: #4AAFF8;
+    color: white;
+}
+/* CHECKOUT  */
+
+/* CHECKOUTSUCCES */
+.checkoutsuccContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.checkoutsuccContainer section{
+    display: flex;
+    flex-direction: column;
+    background-color: #eee;
+    min-width: 70%;
+    min-height: 55%;
+    padding-left: 30px;
+}
+
+.checkoutsuccContainer h1{
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.checkoutsuccContainer section p{
+    margin: 5px;
+    font-size: 2.1875rem;
+}
+
+.checkoutsuccContainer section span{
+    color: rgb(0, 176, 0);
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+}
+.secondBtn{
+    background-color: white;
+    color: #4AAFF8;
+    border-radius: 5px;
+    border:1px solid #4AAFF8;
+    padding: 5px 35px;
+    font-size: 1.5rem;
+    margin: 20px auto;
+}
+
+.secondBtn:hover{
+    background-color: #4AAFF8;
+    color: white;
+}
+/* CHECKOUTSUCCES */
+
+/* CONTACT */
+.contactContainer{
+    display: flex;
+    width: 100%;
+}
+.left{
+    flex: 1;
+}
+
+.left img{
+    max-width: 100%;
+}
+
+.right{
+    flex: 1;
+    text-align: left;
+    margin-top: 50px;
+    font-size: 1.3rem;
+}
+
+.right h1{
+    text-align: center;
+    font-weight: 500;
+}
+
+
+#yourMsg, .right input{
+    display: block;
+    border: 1px solid #4AAFF8;
+    border-radius: 10px;
+    margin: 5px 0;
+    padding: 5px 10px;
+}
+.form{
+    display: flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    max-width: 100%;
+    margin-bottom: 5px;
+}
+
+.form label{
+    margin-bottom: 5px;
+}
+.form button{
+    margin-top: 10px;
+    padding: 5px 30px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    background-color: #4AAFF8;
+    border:1px solid #4AAFF8;
+    color: white;
+    font-weight: 500;
+    max-width: 30%;
+}
+
+.form textarea{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 20vh;
+}
+/* CONTACT  */
+
+/* JACKET  */
+.jacketContainer{
+    display: flex;
+    gap: 50px; 
+    
+}
+
+.jacketContainer p, h1{
+    margin: 30px 0px 20px 0px;
+}
+
+.jacketContainer hr{
+    margin: 15px 0px;
+}
+
+.jacketContainer section img{
+    width: 70%;
+}
+.img{
+    display: flex;
+    justify-content: center;
+    align-items:  center;
+    flex: 1;
+    background-color: #F5F5F5;
+    height: 95vh;
+    max-width: 40%;
+    margin-top: 30px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    
+}
+
+.details{
+    flex: 1;
+}
+
+.price{
+    margin-bottom: 0;
+}
+
+.details h1, .details .color, .details .size, .description {
+    letter-spacing: 1px;
+    font-size: 1.875rem;
+}
+
+.details span{
+    font-weight: 300;
+}
+
+.details .price, .sizes p{
+    font-size: 1.5625rem;
+    letter-spacing: 1px;
+}
+
+.colorsContainer{
+    display: flex;
+    justify-content: flex-start;
+    gap: 50px;
+}
+
+.colors{
+    background-color: black;
+    width: 6%;
+    height: 5vh;
+}
+
+.green{
+    background-color: #037200;
+}
+
+.grey{
+    background-color: #94760C;
+}
+
+.red{
+    background-color: #D80000;
+}
+.sizes{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sizes p{
+    border: 1px solid black;
+    padding: 10px;
+    margin: 0;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    gap: 70px;
+    margin: 20px 0;
+}
+
+.buttons button{
+    width: 100%;
+    height: 6vh; 
+    border-radius: 5px;
+}
+
+.buttons :first-child{
+    background-color: #4AAFF8;
+    border:none;
+    color: #FFF;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 1.8rem
+}
+
+.buttons :nth-child(2){
+    background-color: #FFF;
+    color: #4AAFF8;
+    border: 1px solid #4AAFF8;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 1.8rem
+}
+
+.buttons :first-child:hover{
+    background-color: #3886BF
+}
+
+.buttons :nth-child(2):hover{
+    background-color: #4AAFF8;
+    color: #FFF;
+}
+.description{
+    font-weight: 200;
+}
+/* JACKET  */

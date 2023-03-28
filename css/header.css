@@ -9,6 +9,10 @@ nav a{
     text-transform: uppercase;
 }
 
+.navLogo img{
+    max-width: 100%;
+}
+
 h2{
     margin-left: 40px;
 }
@@ -29,24 +33,3 @@ section{
     border-radius: 5px;
 }
 
-.lineFooter{
-    border: 1.5px solid #0A3641;
-    border-radius: 5px;
-    
-}
-
-.footerContainer{
-    display: flex;
-    justify-content: space-around;
-    text-align: left;
-}
-
-.socialIcons{
-    display: flex;
-    justify-content: space-between;
-    padding-top: 20px;
-}
-
-.conditions, .shipping p{
-    line-height: 5px;
-}

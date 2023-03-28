@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RainyDays | Contact</title>
     <link rel="stylesheet" href="css/headerfooter.css">
-    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;700&display=swap" rel="stylesheet">
@@ -31,17 +31,23 @@
                 <hr class="lineHeader">
             </div>
     </header>
-    <main>
-        <img src="images/contact.svg" alt="">
-        <section>  
+    <main class="contactContainer">
+        <div class="left"><img src="images/contact.svg" alt=""></div>
+        <section class="right">  
         <h1>Please get in touch and our expert support team will answer all your questions.</h1>
         <form class="form">
-            <label for="fullname">Full name</label>
-            <input type="text" name="fullname" id="fullname" required>
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email" required>
-            <label for="yourMsg">Your message</label required>
-            <textarea name="yourMs" id="yourMsg" cols="60" rows="13" minlength="50" required></textarea>
+            <div class="form-group">
+                <label for="fullname">Full name</label>
+                <input type="text" name="fullname" id="fullname" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="yourMsg">Your message</label required>
+                <textarea name="yourMs" id="yourMsg" minlength="50" required></textarea>
+            </div>
             <button type="submit" value="Send">Send</button>
         </form> 
         </section>
