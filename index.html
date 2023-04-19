@@ -13,25 +13,26 @@
     <script src="https://kit.fontawesome.com/aafd0c0d38.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>  
-    <div class="navContainer">
+    <header> 
         <div>
-            <a href="index.html" class="navLogo"><img src="images/logo.svg" alt="website logo"></a>
-         </div> 
-         <nav class="navMenu">
-            <a href="index.html">Men</a>
-            <a href="index.html">Womens</a>
-            <a href="index.html">Kids</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-            <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
-        </nav>
-    </div>
-        <div>
-            <hr class="lineHeader">
+            <a href="index.html" class="navLogo"><img src="images/logo.png" alt="website logo"></a>
+        </div>
+        <input type="checkbox" id="menu-checkbox">
+        <label for="menu-checkbox" class="hamburger-menu"><i class="fas fa-bars fa-2xl"></i></label> 
+        <div class="navContainer">
+            <nav class="navMenu">
+                <a href="index.html">Men</a>
+                <a href="index.html">Womens</a>
+                <a href="index.html">Kids</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+             </nav>
         </div>
     </header>
-    
+    <section>
+        <hr class="lineHeader">
+    </section>
     <main>
     <section class="hero">
         <div class="heroText">
@@ -41,52 +42,52 @@
         </div>
     </section>
     <section>
-        <h2>MEN TREDING</h2>
+        <h2 class="cardTitle">MEN TREDING</h2>
         <div class="cardContainer">
-        <div class="cardJacket" onclick="location.href='#';" style="cursor: pointer;">
-            <img src="images/jacket1.svg" alt="red jacket">
+        <div class="cardJacket" >
+            <img src="images/jacket1.png" alt="red jacket">
             <p>Kirkestiden men's shell jacket</p>
             <span>699,-</span>
         </div>
         <div class="cardJacket">
-            <img src="images/jacket2.svg" alt="grey jacket">
+            <img src="images/jacket2.png" alt="grey jacket">
             <p>Zuko hybrid jacket men</p>
             <span>999,-</span>
         </div>
         <div class="cardJacket">
-            <img src="images/jacket3.svg" alt="black jacket">
+            <img src="images/Jacket3.png" alt="black jacket">
             <p>Kirkestiden men's shell jacket</p>
             <span>899,-</span>
         </div>
         <div class="cardJacket">
-            <img src="images/jacket4.svg" alt="brown jacket">
+            <img src="images/jacket4.png" alt="brown jacket">
             <p>Crew Hooded shell jacket</p>
-            <span>799</span>
+            <span>799,-</span>
         </div>
-    </div>
+        </div>
     </section>
     <section>
-        <h2>WOMENS TRENDING</h2>
+        <h2 class="cardTitle">WOMENS TRENDING</h2>
         <div class="cardContainer">
         <div class="cardJacket">
-            <img src="images/jacket5.svg" alt="grey jacket">
+            <img src="images/jacket5.png" alt="grey jacket">
             <p>Kirkestinden men's shell jacket</p>
             <span>699,-</span>
         </div>
         <div class="cardJacket">
-            <img src="images/jacket6.svg" alt="black jacket">
+            <img src="images/jacket6.png" alt="black jacket">
             <p>Kirkestiden men's shell jacket</p>
             <span>899,-</span>
         </div>
         <div class="cardJacket">
-            <img src="images/jacket7.svg" alt="grey jacket">
+            <img src="images/jacket7.png" alt="grey jacket">
             <p>Zuko hybrid jacket men</p>
             <span>999,-</span>
         </div>
         <div class="cardJacket">
-            <img src="images/jacket8.svg" alt="brown jacket">
+            <img src="images/jacket8.png" alt="brown jacket">
             <p>Crew Hooded shell jacket</p>
-            <span>799</span>
+            <span>799,-</span>
         </div>
     </section>
     <section class="membership">
@@ -103,7 +104,7 @@
         <div class="footerContainer">
             <div class="shipping">
                 <h3>Shipping</h3>
-                <p>Get free delivery </p>
+                <p>Get free delivery</p>
                 <p>for orders over</p>
                 <p>2000NOK</p>
             </div>

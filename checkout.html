@@ -1,106 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>RainyDays | Checkout</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/aafd0c0d38.js" crossorigin="anonymous"></script>
-</head>
-<body>
-    <header>  
-        <div class="navContainer">
-            <div>
-                <a href="index.html" class="navLogo"><img src="images/logo.svg" alt="website logo"></a>
-             </div> 
-             <nav class="navMenu">
-                <a href="index.html">Men</a>
-                <a href="index.html">Womens</a>
-                <a href="index.html">Kids</a>
-                <a href="about.html">About</a>
-                <a href="contact.html">Contact</a>
-                <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
-            </nav>
-        </div>
-            <div>
-                <hr class="lineHeader">
-            </div>
-        </header>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/aafd0c0d38.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div>
+        <a href="index.html" class="navLogo"
+          ><img src="images/logo.png" alt="website logo"
+        /></a>
+      </div>
+      <input type="checkbox" id="menu-checkbox" />
+      <label for="menu-checkbox" class="hamburger-menu"
+        ><i class="fas fa-bars fa-2xl"></i
+      ></label>
+      <div class="navContainer">
+        <nav class="navMenu">
+          <a href="index.html">Men</a>
+          <a href="index.html">Womens</a>
+          <a href="index.html">Kids</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+          <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+        </nav>
+      </div>
+    </header>
+    <section>
+      <hr class="lineHeader" />
+    </section>
     <main class="checkoutContainer">
-        <section class="form">
-            <h1>Delivery Information</h1>
-            <form action="">
-                <label for="name">Name</label>
-                <input type="text" name="name" id="name">
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email">
-                <label for="adress">Adress</label>
-                <input type="text" name="adress" id="adress">
-                <div class="inlineform">
-                    <div class="inlineInput">
-                        <label for="city">City</label>
-                        <input type="text" name="city" id="city">
-                    </div>
-                    <div class="inlineInput">
-                        <label for="postal" >Postal code</label>
-                        <input type="number" name="postal" id="postal">
-                    </div>
-                </div>
-                <label for="card">Card number</label>
-                <input type="number" name="card" id="card">
-                <div class="inlineform">
-                    <div class="inlineInput">
-                        <label for="expiration">Expiration date</label>
-                        <input type="date" name="expiration" id="expiration">
-                    </div>
-                    <div class="inlineInput">
-                        <label for="cvc" >CVC</label>
-                        <input type="number" name="cvc" id="cvc">
-                    </div>
-                </div>
-            </form>
-        </section>
-        <section class="totalprice">
-            <div class="totalPriceContainer">
-                <p>Total<span>1398 NOK</span></p>
-                <button class="firstBtn">PAY NOW</button>
-                <button class="secondBtn">CONTINUE SHOPPING</button>
-                <p>Includes taxes, shipping and discount codes.</p>
+      <section class="formCheckout">
+        <h1>Delivery Information</h1>
+        <form action="">
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name" />
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" />
+          <label for="adress">Adress</label>
+          <input type="text" name="adress" id="adress" />
+          <div class="inlineform">
+            <div class="inlineInput">
+              <label for="city">City</label>
+              <input type="text" name="city" id="city" />
             </div>
-        </section>
+            <div class="inlineInput">
+              <label for="postal">Postal code</label>
+              <input type="number" name="postal" id="postal" />
+            </div>
+          </div>
+          <label for="card">Card number</label>
+          <input type="number" name="card" id="card" />
+          <div class="inlineform">
+            <div class="inlineInput">
+              <label for="expiration">Expiration date</label>
+              <input type="date" name="expiration" id="expiration" />
+            </div>
+            <div class="inlineInput">
+              <label for="cvc">CVC</label>
+              <input type="number" name="cvc" id="cvc" />
+            </div>
+          </div>
+        </form>
+      </section>
+      <section class="totalprice">
+        <div class="totalPriceContainer">
+          <p>Total<span>1398 NOK</span></p>
+          <button class="btnPrimary btnPricePrimary">PAY NOW</button>
+          <button class="btnSecondary btnPriceSecondary">
+            CONTINUE SHOPPING
+          </button>
+          <p>Includes taxes, shipping and discount codes.</p>
+        </div>
+      </section>
     </main>
     <footer>
-        <div>
-            <hr class="lineFooter">
+      <div>
+        <hr class="lineFooter" />
+      </div>
+      <div class="footerContainer">
+        <div class="shipping">
+          <h3>Shipping</h3>
+          <p>Get free delivery</p>
+          <p>for orders over</p>
+          <p>2000NOK</p>
         </div>
-        <div class="footerContainer">
-            <div class="shipping">
-                <h3>Shipping</h3>
-                <p>Get free delivery </p>
-                <p>for orders over</p>
-                <p>2000NOK</p>
-            </div>
-            <div class="socialMedia">
-                 <h3>You can find us on</h3>
-            <div class="socialIcons">
-                <i class="fa-brands fa-facebook fa-2xl"></i>
-                <i class="fa-brands fa-twitter fa-2xl"></i>
-                <i class="fa-brands fa-instagram fa-2xl"></i>
-            </div>
-            </div>
-             <div class="aboutUs">
-                <h3>About us</h3>
-                <div class="conditions">
-                    <p>Privacy Statement</p>
-                    <p>Sales conditions</p>
-                    <p>Maintenance</p>
-                </div>
-            </div>
+        <div class="socialMedia">
+          <h3>You can find us on</h3>
+          <div class="socialIcons">
+            <i class="fa-brands fa-facebook fa-2xl"></i>
+            <i class="fa-brands fa-twitter fa-2xl"></i>
+            <i class="fa-brands fa-instagram fa-2xl"></i>
+          </div>
         </div>
+        <div class="aboutUs">
+          <h3>About us</h3>
+          <div class="conditions">
+            <p>Privacy Statement</p>
+            <p>Sales conditions</p>
+            <p>Maintenance</p>
+          </div>
+        </div>
+      </div>
     </footer>
-</body>
+  </body>
 </html>

@@ -12,26 +12,28 @@
     <script src="https://kit.fontawesome.com/aafd0c0d38.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>  
+    <header> 
+        <div>
+            <a href="index.html" class="navLogo"><img src="images/logo.png" alt="website logo"></a>
+        </div>
+        <input type="checkbox" id="menu-checkbox">
+        <label for="menu-checkbox" class="hamburger-menu"><i class="fas fa-bars fa-2xl"></i></label> 
         <div class="navContainer">
-            <div>
-                <a href="index.html" class="navLogo"><img src="images/logo.svg" alt="website logo"></a>
-             </div> 
-             <nav class="navMenu">
+            <nav class="navMenu">
                 <a href="index.html">Men</a>
                 <a href="index.html">Womens</a>
                 <a href="index.html">Kids</a>
                 <a href="about.html">About</a>
                 <a href="contact.html">Contact</a>
                 <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
-            </nav>
+             </nav>
         </div>
-            <div>
-                <hr class="lineHeader">
-            </div>
     </header>
+    <section>
+        <hr class="lineHeader">
+    </section>
     <main class="contactContainer">
-        <div class="left"><img src="images/contact.svg" alt=""></div>
+        <div class="left"><img src="images/contact.png" alt=""></div>
         <section class="right">  
         <h1>Please get in touch and our expert support team will answer all your questions.</h1>
         <form class="form">
@@ -47,7 +49,7 @@
                 <label for="yourMsg">Your message</label required>
                 <textarea name="yourMs" id="yourMsg" minlength="50" required></textarea>
             </div>
-            <button type="submit" value="Send">Send</button>
+            <button class="btnPrimary btnFormPrimary" type="submit" value="Send">SEND</button>
         </form> 
         </section>
     </main>
