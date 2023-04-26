@@ -9,6 +9,13 @@
 }
 
 /* HELPER CLASS */
+.lineBreak {
+  display: block;
+}
+.noStyle {
+  color: inherit;
+  text-decoration: none;
+}
 
 .btnPrimary {
   background-color: var(--lightblue);
@@ -35,6 +42,10 @@
 .btnSecondary:hover {
   background-color: var(--lightblue);
   color: white;
+}
+
+.collectionTitle {
+  text-align: center;
 }
 
 /* HELPER CLASS */
@@ -87,18 +98,20 @@ section {
 .hero p {
   font-size: 0.9rem;
   font-weight: 400;
+  padding-bottom: 10px;
 }
 
-.hero button {
+.hero a {
   color: white;
   background-color: transparent;
   border-radius: 5px;
-  padding: 6px;
   border: 1px solid white;
   letter-spacing: 1.5px;
+  font-size: 0.8rem;
+  padding: 4px 5px;
 }
 
-.hero button:hover {
+.hero a:hover {
   background-color: black;
   border: 1px solid;
 }
@@ -156,15 +169,16 @@ section {
   font-weight: 200;
 }
 
-.membership button {
+.membership a {
   margin: 0px 0px 0px 40px;
   background-color: black;
   color: white;
   border-radius: 10px;
   border: 1px solid black;
   font-weight: 400;
+  font-size: 0.8rem;
   letter-spacing: 1.5px;
-  padding: 6px 10px;
+  padding: 4px 5px;
 }
 
 .cardJacket h3 {
@@ -605,11 +619,6 @@ h1 {
   .navLogo img {
     max-width: 65%;
   }
-
-  .navContainer {
-    font-size: 1.1rem;
-  }
-
   .heroText {
     padding: 40px 20px;
   }
@@ -637,7 +646,7 @@ h1 {
   .cardJacket img {
     max-width: 70%;
   }
-  .hero button {
+  .hero a {
     font-size: 0.7rem;
     padding: 3px;
     letter-spacing: 1px;
@@ -658,10 +667,9 @@ h1 {
     padding: 15px 10px;
     margin: 0px;
   }
-  .membership button {
-    font-size: 0.7rem;
+  .membership a {
+    font-size: 0.5rem;
     letter-spacing: 1px;
-    padding: 7px;
     margin: 5px 10px;
   }
   /* INDEX  */
@@ -775,8 +783,8 @@ h1 {
     width: 160px;
   }
 
-  .hero button {
-    padding: 1.5px;
+  .hero a {
+    font-size: 0.55rem;
     letter-spacing: 0.6px;
   }
 

@@ -17,9 +17,9 @@ header {
 
 .navContainer {
   position: absolute;
-  background-color: grey;
+  background-color: #f2f2f2;
   z-index: 99;
-  top: 20px;
+  top: 30px;
   right: 30px;
 }
 
