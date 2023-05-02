@@ -203,7 +203,7 @@ section {
   text-align: center;
 }
 
-.aboutContainer p {
+.aboutContainer h2 {
   text-align: center;
   font-size: 2rem;
   font-weight: 300;
@@ -414,6 +414,12 @@ section {
   text-align: center;
   font-weight: 500;
   font-size: 2rem;
+}
+
+.right h2 {
+  font-size: 0.9rem;
+  text-align: center;
+  font-weight: 400;
 }
 
 #yourMsg,
@@ -680,7 +686,7 @@ h1 {
   .aboutContainer h1 {
     font-size: 2rem;
   }
-  .aboutContainer p {
+  .aboutContainer h2 {
     font-size: 1.5rem;
   }
   /* ABOUT  */
@@ -695,6 +701,9 @@ h1 {
   }
   .right h1 {
     font-size: 1.8rem;
+  }
+  .right h2 {
+    font-size: 0.8rem;
   }
   .form-group label {
     font-size: 1.2rem;
@@ -823,7 +832,7 @@ h1 {
   .aboutContainer h1 {
     font-size: 1.8rem;
   }
-  .aboutContainer p {
+  .aboutContainer h2 {
     font-size: 1.2rem;
   }
   /* ABOUT  */
