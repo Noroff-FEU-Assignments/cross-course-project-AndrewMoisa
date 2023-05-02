@@ -623,6 +623,11 @@ h1 {
   }
   /* BUTTONS  */
 
+  /* COLLECTION  */
+  .collectionTitle {
+    font-size: 2rem;
+  }
+
   /* INDEX */
   .navLogo img {
     max-width: 65%;
@@ -773,6 +778,12 @@ h1 {
     font-size: 0.9rem;
   }
   /* BUTONS  */
+
+  /* COLLECTION  */
+  .collectionTitle {
+    font-size: 1.8rem;
+  }
+
   /* INDEX */
   .navLogo img {
     max-width: 40%;
