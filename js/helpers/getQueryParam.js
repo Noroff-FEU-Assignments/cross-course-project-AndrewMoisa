@@ -1,4 +1,4 @@
-function getQuery(param) {
+function getQueryParam(param) {
   const queryString = document.location.search;
   const params = new URLSearchParams(queryString);
   const value = params.get(param);
@@ -6,4 +6,4 @@ function getQuery(param) {
   return value;
 }
 
-export default getQuery;
+export default getQueryParam;
