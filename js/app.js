@@ -5,8 +5,6 @@ import { handleProductDetailsDisplay } from "./handlers/handleProductRenderDetai
 function router() {
   const path = window.location.pathname;
 
-  console.log(path);
-
   switch (path) {
     case "/":
     case "/index.html":
