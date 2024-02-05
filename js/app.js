@@ -1,6 +1,7 @@
 // import { handleJokeDetailsDisplay } from "./handlers/jokes/handleJokeDetailsDisplay.js";
 import { handleProductsDisplay } from "./handlers/handleProductsRender.js";
 import { handleProductDetailsDisplay } from "./handlers/handleProductRenderDetails.js";
+import { handleDomContentLoaded } from "./handlers/handlecart.js";
 
 function router() {
   const path = window.location.pathname;
@@ -15,6 +16,9 @@ function router() {
       break;
     case "/jacket.html":
       handleProductDetailsDisplay();
+      break;
+    case "/cart.html":
+      handleDomContentLoaded();
       break;
   }
 }

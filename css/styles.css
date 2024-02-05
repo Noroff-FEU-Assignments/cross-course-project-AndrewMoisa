@@ -9,6 +9,7 @@
 }
 
 /* HELPER CLASS */
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -544,7 +545,7 @@ h1 {
 }
 
 .details .price,
-.sizes h2 {
+.sizeborder {
   font-size: 1.5625rem;
   letter-spacing: 1px;
   font-weight: 300;
@@ -577,7 +578,7 @@ h1 {
   justify-content: space-between;
 }
 
-.sizes h2 {
+.sizeborder {
   border: 1px solid black;
   padding: 10px;
   margin: 0;
@@ -945,4 +946,9 @@ h1 {
     padding: 7px;
   }
   /* JACKET  */
+}
+
+/* Javascript class toggle */
+.sizesborder {
+  border: 2px solid black;
 }

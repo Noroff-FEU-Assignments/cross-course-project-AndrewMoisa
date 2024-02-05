@@ -13,6 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="css/styles.css" />
+    <script type="module" src="js/app.js"></script>
   </head>
   <body>
     <header>
@@ -41,51 +42,8 @@
     <section>
       <hr class="lineHeader" />
     </section>
-    <main class="cartContainer" id="cart-container">
-      <section class="jackets">
-        <h1>Order Summary</h1>
-        <hr />
-        <div class="jacketCartContainer">
-          <div class="jacketImg">
-            <img src="images/jacket1.png" alt="red shell jacket" />
-          </div>
-          <div class="jacketText">
-            <h2 class="jacketType">
-              <span>Kirkestinden</span> men's shell jacket
-            </h2>
-            <h2>Size: M</h2>
-            <h2>Color: Red</h2>
-            <h2 class="rightSide">699 NOK</h2>
-          </div>
-        </div>
-        <hr />
-        <div class="jacketCartContainer">
-          <div class="jacketImg">
-            <img src="images/jacket1.png" alt="red shell jacket" />
-          </div>
-          <div class="jacketText">
-            <h2 class="jacketType">
-              <span>Kirkestinden</span> men's shell jacket
-            </h2>
-            <h2>Size: M</h2>
-            <h2>Color: Red</h2>
-            <h2 class="rightSide">699 NOK</h2>
-          </div>
-        </div>
-        <hr />
-      </section>
-      <section class="totalprice">
-        <div class="totalPriceContainer">
-          <h2>Total<span>1398 NOK</span></h2>
-          <a href="checkout.html" class="btnPrimary btnPricePrimary noStyle">
-            PLACE ORDER
-          </a>
-          <a href="index.html" class="btnSecondary btnPriceSecondary noStyle">
-            CONTINUE SHOPPING
-          </a>
-          <p>Includes taxes, shipping and discount codes.</p>
-        </div>
-      </section>
+    <main>
+      <section class="cartContainer" id="cart-container"></section>
     </main>
     <footer>
       <div>
