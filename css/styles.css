@@ -1,0 +1,954 @@
+@import url("header.css");
+@import url(footer.css);
+
+:root {
+  --darkgreen: #0a3641;
+  --bgcolor: #f5f5f5;
+  --lightblue: #005b9c;
+  --darkblue: #3886bf;
+}
+
+/* HELPER CLASS */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+.lineBreak {
+  display: block;
+}
+.noStyle {
+  color: inherit;
+  text-decoration: none;
+  text-align: center;
+}
+
+.btnPrimary {
+  background-color: var(--lightblue);
+  color: white;
+  border-radius: 5px;
+  border: none;
+  width: 100%;
+  font-weight: bold;
+}
+
+.btnSecondary {
+  background-color: white;
+  color: var(--lightblue);
+  border-radius: 5px;
+  border: 1px solid var(--lightblue);
+  width: 100%;
+  font-weight: bold;
+}
+
+.btnPrimary:hover {
+  background-color: var(--darkblue);
+}
+
+.btnSecondary:hover {
+  background-color: var(--lightblue);
+  color: white;
+}
+
+.collectionTitle {
+  text-align: center;
+}
+
+.spinner {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: 9px solid;
+  border-color: #dbdcef;
+  border-right-color: #474bff;
+  animation: spinner-d3wgkg 1s infinite linear;
+}
+
+@keyframes spinner-d3wgkg {
+  to {
+    transform: rotate(1turn);
+  }
+}
+/* HELPER CLASS */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  color: var(--darkgreen);
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+section {
+  margin: 0px 0px 40px 0px;
+}
+
+/* INDEX */
+.lineHeader {
+  border: 2.5px solid var(--darkgreen);
+  border-radius: 5px;
+}
+
+.hero {
+  background-image: url(/images/hero.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  max-height: 320px;
+  line-height: 0px;
+  margin: 30px 0px 30px 0px;
+  border-radius: 5px;
+  filter: drop-shadow(0px 5px 4px rgba(0, 0, 0, 0.25));
+}
+.heroText {
+  padding: 150px 40px;
+}
+
+.hero h1 {
+  margin: 0px 0px 23px 0px;
+}
+
+.hero p {
+  font-size: 0.9rem;
+  font-weight: 400;
+  padding-bottom: 10px;
+}
+
+.hero a {
+  color: white;
+  background-color: transparent;
+  border-radius: 5px;
+  border: 1px solid white;
+  letter-spacing: 1.5px;
+  font-size: 0.8rem;
+  padding: 4px 5px;
+}
+
+.hero a:hover {
+  background-color: black;
+  border: 1px solid;
+}
+
+.cardContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  /* justify-content: space-around; */
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.cardTitle {
+  margin: 0px 0px 5px 20px;
+}
+
+.cardJacket {
+  background-color: var(--bgcolor);
+  max-width: 250px;
+  height: 100%;
+  padding: 10px 0;
+  font-weight: 500;
+  text-align: center;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.cardJacket img {
+  max-width: 180px;
+  max-height: 180px;
+}
+
+.cardJacket span {
+  font-weight: bold;
+}
+
+.membership {
+  background-image: url(/images/nike.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  padding-bottom: 50px;
+  border-radius: 5px;
+  overflow: visible;
+  color: black;
+  margin: 70px 0 50px 0;
+  filter: drop-shadow(0px 5px 4px rgba(0, 0, 0, 0.25));
+}
+
+.membership h2 {
+  margin: 0px 0px 0px 40px;
+  line-height: 0;
+  font-weight: bold;
+  font-size: 2.8125rem;
+}
+
+.membership p {
+  padding-left: 40px;
+  font-size: 2rem;
+  font-weight: 200;
+}
+
+.membership a {
+  margin: 0px 0px 0px 40px;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  border: 1px solid black;
+  font-weight: 400;
+  font-size: 0.8rem;
+  letter-spacing: 1.5px;
+  padding: 4px 5px;
+}
+
+.cardJacket h3 {
+  font-size: 1em;
+  font-weight: 400;
+}
+
+/* INDEX */
+
+/* ABOUT */
+.aboutImage {
+  background-image: url(/images/about.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 330px;
+  max-width: 100%;
+}
+
+.aboutContainer h1 {
+  text-align: center;
+}
+
+.aboutContainer h2 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 300;
+  margin: 0px 0px 50px 0px;
+}
+/* ABOUT */
+
+/* TOTAL PRICE CONTENT CART+CHECKOUT */
+
+.totalprice {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.totalPriceContainer {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  margin: 80px 0px 0px 0px;
+  background-color: #eee;
+  padding: 40px;
+  border-radius: 5px;
+  height: 400px;
+  width: 480px;
+}
+
+.totalPriceContainer h2 {
+  font-size: 2.125rem;
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+.totalPriceContainer p:last-child {
+  text-align: center;
+  font-weight: 300;
+  font-size: 0.9rem;
+}
+
+.btnPricePrimary,
+.btnPriceSecondary {
+  padding: 12px 0;
+  margin: 20px 0 0;
+  font-size: 1.25rem;
+}
+
+/* TOTAL PRICE CONTENT CART+CHECKOUT */
+
+/* CART */
+.cartContainer {
+  display: flex;
+}
+
+.cartContainer h1 {
+  margin: 30px 0px 10px 0px;
+}
+
+.jackets {
+  flex: 1;
+}
+
+.jacketCartContainer {
+  display: flex;
+  margin: 20px 0px;
+  gap: 40px;
+}
+
+.jacketImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bgcolor);
+  max-width: 30%;
+  border-radius: 5px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.jacketImg img,
+.jacketText {
+  width: 100%;
+}
+
+.jacketText h2 {
+  font-size: 1.6rem;
+  margin: 5px auto;
+  font-weight: 400;
+}
+
+.jacketType {
+  font-size: 1.875rem;
+}
+
+.jacketType span {
+  font-weight: bold;
+}
+
+.rightSide {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* CART  */
+
+/* CHECKOUT  */
+.checkoutContainer {
+  display: flex;
+}
+
+.formCheckout {
+  flex: 1;
+  max-width: 550px;
+}
+
+.formCheckout form {
+  display: flex;
+  flex-direction: column;
+}
+
+.formCheckout form input {
+  display: block;
+  border: 1px solid var(--lightblue);
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin: 5px 0px 15px 0px;
+}
+
+.inlineform {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* .inlineInput{
+    display: flex;
+    align-items: baseline;
+    gap: 5px;
+    
+} */
+
+/* CHECKOUT  */
+
+/* CHECKOUTSUCCES */
+.checkoutsuccContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.checkoutsuccContainer section {
+  display: flex;
+  flex-direction: column;
+  background-color: #ededed;
+  min-width: 70%;
+  min-height: 55%;
+  padding-left: 30px;
+}
+
+.checkoutsuccContainer h1 {
+  text-align: center;
+}
+
+.checkoutsuccContainer section h2 {
+  margin: 5px;
+  font-size: 2.1875rem;
+  font-weight: 400;
+}
+
+.checkoutsuccContainer section span {
+  color: #065c00;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+}
+
+.btnSucces {
+  max-width: 40%;
+}
+
+/* CHECKOUTSUCCES */
+
+/* CONTACT */
+.contactContainer {
+  display: flex;
+  width: 100%;
+}
+.left {
+  flex: 1;
+}
+
+.left img {
+  max-width: 80%;
+}
+
+.right {
+  flex: 1;
+  text-align: left;
+  margin: 40px 0 0;
+  font-size: 1.2rem;
+}
+
+.right h1 {
+  text-align: center;
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+.right h2 {
+  font-size: 0.9rem;
+  text-align: center;
+  font-weight: 400;
+}
+
+#yourMsg,
+.right input {
+  display: block;
+  border: 1px solid var(--lightblue);
+  border-radius: 10px;
+  margin: 5px 0;
+  padding: 5px 10px;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 30px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  max-width: 100%;
+  margin: 0px 0px 5px 0px;
+}
+
+.form label {
+  margin: 0px 0px 5px 0px;
+}
+.btnFormPrimary {
+  margin: 10px 0px 0px 0px;
+  padding: 5px 30px;
+  max-width: 30%;
+}
+
+.form textarea {
+  height: 200px;
+}
+/* CONTACT  */
+
+/* JACKET  */
+.jacketContainer {
+  display: flex;
+  gap: 50px;
+  margin-bottom: 50px;
+}
+
+.jacketContainer h2,
+h1 {
+  margin: 30px 0px 20px 0px;
+}
+
+.jacketContainer hr {
+  margin: 15px 0px;
+}
+
+.imgJacket img {
+  width: 80%;
+}
+.imgJacket {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  background-color: var(--bgcolor);
+  height: 95vh;
+  max-width: 45%;
+  margin: 30px 0px 0px 0px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.details {
+  flex: 1;
+}
+
+.price {
+  margin: 0 0 0px 0;
+}
+
+.details .color,
+.details .size,
+.description {
+  letter-spacing: 1px;
+  font-size: 1.875rem;
+  font-weight: 400;
+}
+
+.details span {
+  font-weight: 300;
+}
+
+.details .price,
+.sizeborder {
+  font-size: 1.5625rem;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+
+.colorsContainer {
+  display: flex;
+  justify-content: space-between;
+  max-width: 70%;
+}
+
+.colors {
+  background-color: black;
+  padding: 20px;
+}
+
+.green {
+  background-color: #037200;
+}
+
+.grey {
+  background-color: #94760c;
+}
+
+.red {
+  background-color: #d80000;
+}
+.sizes {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sizeborder {
+  border: 1px solid black;
+  padding: 10px;
+  margin: 0;
+}
+
+.btnJacketContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 70px;
+  margin: 20px 0;
+}
+
+.btnJacketPrimary,
+.btnJacketSecondary {
+  letter-spacing: 1px;
+  font-size: 1.8rem;
+  padding: 7px;
+  text-align: center;
+}
+
+.description {
+  font-weight: 200;
+  font-size: 600;
+}
+/* JACKET  */
+
+@media (max-width: 1024px) {
+  body {
+    margin: 0 30px;
+  }
+  /* INDEX  */
+  .navLogo {
+    max-width: 75%;
+  }
+  .cardJacket {
+    margin-bottom: 25px;
+  }
+  /* INDEX  */
+  /* CONTACT  */
+  .right {
+    margin-top: 0px;
+  }
+  .left {
+    margin-top: 30px;
+  }
+  /* CONTACT  */
+  /* CART  */
+  .totalPriceContainer {
+    width: 440px;
+  }
+  /* CART  */
+  /* JACKET  */
+  .details h1 {
+    font-size: 2rem;
+  }
+  .details .price,
+  .sizes p {
+    font-size: 1.8rem;
+  }
+  .btnJacketPrimary,
+  .btnJacketSecondary {
+    font-size: 1.6rem;
+  }
+  /* JACKET  */
+}
+
+@media (max-width: 992px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  /* BUTTONS  */
+  .btnPricePrimary,
+  .btnPriceSecondary {
+    font-size: 1rem;
+  }
+  /* BUTTONS  */
+
+  /* COLLECTION  */
+  .collectionTitle {
+    font-size: 2rem;
+  }
+
+  /* INDEX */
+  .navLogo img {
+    max-width: 65%;
+  }
+  .heroText {
+    padding: 40px 20px;
+  }
+  .heroText h1 {
+    margin-top: 50px;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  .heroText p {
+    font-size: 0.9rem;
+  }
+  .cardContainer {
+    justify-content: space-evenly;
+    gap: 10px;
+  }
+  .cardJacket {
+    font-size: 1.2rem;
+    width: 230px;
+    height: 100%;
+    margin-bottom: 15px;
+  }
+
+  .cardJacket h3 {
+    margin: 5px auto;
+  }
+  .cardJacket img {
+    max-width: 70%;
+  }
+  .hero a {
+    font-size: 0.7rem;
+    padding: 3px;
+    letter-spacing: 1px;
+  }
+
+  .membership {
+    margin: 10px auto;
+    min-height: 120px;
+    border-radius: 10px;
+  }
+
+  .membership h2 {
+    font-size: 2rem;
+    margin: 10px 15px;
+  }
+  .membership p {
+    font-size: 1.3rem;
+    padding: 15px 10px;
+    margin: 0px;
+  }
+  .membership a {
+    font-size: 0.5rem;
+    letter-spacing: 1px;
+    margin: 5px 10px;
+  }
+  /* INDEX  */
+
+  /* ABOUT  */
+  .aboutContainer h1 {
+    font-size: 2rem;
+  }
+  .aboutContainer h2 {
+    font-size: 1.5rem;
+  }
+  /* ABOUT  */
+
+  /* CONTACT  */
+  .left {
+    display: none;
+  }
+  .right {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  .right h1 {
+    font-size: 1.8rem;
+  }
+  .right h2 {
+    font-size: 0.8rem;
+  }
+  .form-group label {
+    font-size: 1.2rem;
+  }
+  /* CONTACT  */
+  /* CART +CHECKOUT */
+  .cartContainer,
+  .checkoutContainer {
+    flex-direction: column;
+  }
+  .cartContainer h1 {
+    font-size: 1.8rem;
+  }
+  .totalprice {
+    align-items: center;
+  }
+  .jacketText h2 {
+    font-size: 1.3rem;
+  }
+  .jacketImg {
+    max-width: 20%;
+  }
+  .formCheckout {
+    margin: 0 auto;
+  }
+  .formCheckout h1 {
+    font-size: 2.3rem;
+  }
+  .totalPriceContainer h2,
+  .checkoutsuccContainer h1 {
+    font-size: 2rem;
+  }
+  .checkoutsuccContainer section h2 {
+    font-size: 1.6rem;
+  }
+  /* CART  */
+  /* JACKET  */
+  .details h1 {
+    font-size: 1.6rem;
+  }
+  .details .price,
+  .sizes p {
+    font-size: 1.2rem;
+  }
+  .btnJacketPrimary,
+  .btnJacketSecondary {
+    font-size: 1rem;
+  }
+  .details .color,
+  .details .size,
+  .description {
+    font-size: 1.5rem;
+  }
+  /* JACKET  */
+}
+
+@media (max-width: 576px) {
+  body {
+    margin: 0 5px;
+  }
+  h2 {
+    font-size: 1.3rem;
+  }
+  /* BUTONS  */
+  .btnPricePrimary,
+  .btnPriceSecondary {
+    font-size: 0.9rem;
+  }
+  /* BUTONS  */
+
+  /* COLLECTION  */
+  .collectionTitle {
+    font-size: 1.8rem;
+  }
+
+  /* INDEX */
+  .navLogo img {
+    max-width: 40%;
+  }
+  .hero {
+    background-image: url(/images/heroMobile.png);
+  }
+
+  .heroText h1 {
+    margin-top: 60px;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+  .heroText p {
+    font-size: 0.75rem;
+  }
+  .cardJacket {
+    font-size: 1.1rem;
+    max-width: 160px;
+  }
+
+  .hero a {
+    font-size: 0.55rem;
+    letter-spacing: 0.6px;
+  }
+
+  .membership {
+    background-image: url(/images/membershipMobile.png);
+    background-size: cover;
+    min-height: 120px;
+  }
+
+  .membership h2 {
+    font-size: 1.5rem;
+  }
+  .membership p {
+    font-size: 0.85rem;
+    padding: 10px 5px;
+  }
+  .membership a {
+    font-size: 0.6rem;
+    padding: 5px;
+    margin: 5px 5px;
+  }
+  footer h3 {
+    font-size: 1.15rem;
+  }
+  /* INDEX */
+
+  /* ABOUT  */
+  .aboutImage {
+    background-image: url(/images/aboutusMobile.png);
+    height: 180px;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .aboutContainer h1 {
+    font-size: 1.8rem;
+  }
+  .aboutContainer h2 {
+    font-size: 1.2rem;
+  }
+  /* ABOUT  */
+  /* CONTACT  */
+  .right {
+    max-width: 100%;
+  }
+  .right h1 {
+    font-size: 1.5rem;
+  }
+  .form-group label {
+    font-size: 0.9rem;
+  }
+  .btnFormPrimary {
+    padding: 3px;
+  }
+  /* CONTACT  */
+  /* CART  */
+  .cartContainer h1 {
+    font-size: 1.8rem;
+  }
+  .totalPriceContainer {
+    max-width: 90%;
+  }
+  .jacketText p {
+    font-size: 1.2rem;
+  }
+
+  .totalPriceContainer h2,
+  .checkoutsuccContainer h1 {
+    font-size: 1.6rem;
+  }
+  .totalPriceContainer p:last-child {
+    font-size: 0.7rem;
+  }
+  .formCheckout h1 {
+    font-size: 1.8rem;
+  }
+
+  .checkoutsuccContainer section h2 {
+    font-size: 1.4rem;
+    text-align: left;
+  }
+
+  .checkoutsuccContainer section {
+    padding: 5px;
+  }
+  .btn {
+    margin-top: 20px;
+  }
+
+  /* CART  */
+  /* JACKET  */
+  .jacketContainer {
+    flex-direction: column;
+  }
+  .imgJacket {
+    max-width: 100%;
+    padding: 20px 10px;
+  }
+  .colors {
+    padding: 15px;
+  }
+  .sizes p {
+    padding: 7px;
+  }
+  /* JACKET  */
+}
+
+/* Javascript class toggle */
+.sizesborder {
+  border: 2px solid black;
+}
