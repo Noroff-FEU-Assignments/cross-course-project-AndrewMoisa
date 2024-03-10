@@ -58,5 +58,7 @@ function handleCartClick(event) {
     cart.push(item);
   }
 
+  console.log(cart);
+
   storage.saveCart(cart);
 }

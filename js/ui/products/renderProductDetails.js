@@ -1,8 +1,6 @@
 function renderProductDetails(product) {
   const jacketContainer = document.querySelector("#jacket-container");
 
-  console.log(product);
-
   jacketContainer.innerHTML = `<section class="imgJacket">
                              <img src="${product.image}" 
                              alt="${product.title}">

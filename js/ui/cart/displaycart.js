@@ -28,7 +28,7 @@ export function displayCart() {
 }
 
 function createCartItem(item) {
-  const { title, price, image, size } = item;
+  const { title, price, image, size, quantity } = item;
 
   const divmain = document.createElement("div");
   divmain.className = "jacketCartContainer";
@@ -57,6 +57,9 @@ function createCartItem(item) {
   h2Price.className = "rightSide";
   h2Price.textContent = `${item.price} NOK`;
 
+  const pQuantity = document.createElement("p");
+  pQuantity.textContent = `Quantity: ${item.quantity}`;
+
   divmain.appendChild(jacketImg);
   jacketImg.appendChild(img);
   divmain.appendChild(jacketText);
@@ -64,6 +67,7 @@ function createCartItem(item) {
   jacketText.appendChild(h2Size);
   jacketText.appendChild(h2Color);
   jacketText.appendChild(h2Price);
+  jacketText.appendChild(pQuantity);
 
   return divmain;
 }
