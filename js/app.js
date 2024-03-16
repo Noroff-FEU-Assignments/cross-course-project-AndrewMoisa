@@ -11,12 +11,15 @@ function router() {
     case "/index.html":
       handleProductsDisplay();
       break;
+    case "/collection":
     case "/collection.html":
       handleProductsDisplay();
       break;
+    case "/jacket":
     case "/jacket.html":
       handleProductDetailsDisplay();
       break;
+    case "/cart":
     case "/cart.html":
       handleDomContentLoaded();
       break;
