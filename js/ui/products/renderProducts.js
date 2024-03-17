@@ -1,5 +1,8 @@
 export function renderProducts(products, container) {
-  products.forEach((product) => {
+  console.log(products);
+  const limitedProducts = products.slice(0, 5);
+
+  limitedProducts.forEach((product) => {
     container.innerHTML += `
                                               <a href="/jacket.html?id=${product.id}" class="noStyle">
                                               <div class=cardJacket>
