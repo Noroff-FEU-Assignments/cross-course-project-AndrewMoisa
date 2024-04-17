@@ -558,10 +558,12 @@ h1 {
 }
 
 .colors {
-  background-color: black;
   padding: 20px;
 }
 
+.black {
+  background-color: black;
+}
 .green {
   background-color: #037200;
 }
@@ -952,3 +954,7 @@ h1 {
 .sizesborder {
   border: 2px solid black;
 }
+.colorsborder {
+  border: 3px solid black;
+}
+/* Javascript class toggle */

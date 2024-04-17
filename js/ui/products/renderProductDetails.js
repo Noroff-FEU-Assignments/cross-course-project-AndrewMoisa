@@ -11,7 +11,7 @@ function renderProductDetails(product) {
                              <hr>
                              <h2 class="color">Color</h2>
                              <div class="colorsContainer">
-                                        <div class="colors"></div>
+                                        <div class="colors black"></div>
                                         <div class="colors green"></div>
                                         <div class="colors grey"></div>
                                         <div class="colors red"></div>

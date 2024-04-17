@@ -51,7 +51,7 @@ function createCartItem(item) {
   h2Size.textContent = `Size: ${item.size}`;
 
   const h2Color = document.createElement("h2");
-  h2Color.textContent = "Color:";
+  h2Color.textContent = `Color: ${item.color}`;
 
   const h2Price = document.createElement("h2");
   h2Price.className = "rightSide";

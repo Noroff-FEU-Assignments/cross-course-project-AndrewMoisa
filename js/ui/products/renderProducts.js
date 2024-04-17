@@ -1,6 +1,5 @@
 export function renderProducts(products, container) {
-  console.log(products);
-  const limitedProducts = products.slice(0, 5);
+  const limitedProducts = products.slice(0, 5); // Limit the number of products to 5
 
   limitedProducts.forEach((product) => {
     container.innerHTML += `
