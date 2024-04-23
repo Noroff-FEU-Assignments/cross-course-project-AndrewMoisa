@@ -1,6 +1,10 @@
+import { validCategories } from "../../constants.js";
 import { url } from "../../constants.js";
 
 export async function fetchCategories(catId) {
+  if (!validCategories.includes(catId)) {
+    throw new Error("Invalid category ID");
+  }
   const categoryUrl = `${url}?category=${catId}`;
 
   const response = await fetch(categoryUrl);
