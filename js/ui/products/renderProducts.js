@@ -1,13 +1,11 @@
 export function renderProducts(products, container) {
-  const limitedProducts = products.slice(0, 5); // Limit the number of products to 5
-
-  limitedProducts.forEach((product) => {
+  products.forEach((product) => {
     container.innerHTML += `
                                               <a href="/jacket.html?id=${product.id}" class="noStyle">
                                               <div class=cardJacket>
-                                              <img src="${product.image}" alt="${product.title}">
-                                              <h3>${product.title}</h3>
-                                              <span>${product.price}</span>
+                                              <img src="${product.images[0].src}" alt="${product.slug}">
+                                              <h3>${product.name}</h3>
+                                              <span>${product.price_html}</span>
                                               </div>
                                               </a>
                                        `;
