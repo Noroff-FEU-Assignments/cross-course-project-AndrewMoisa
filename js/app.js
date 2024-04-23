@@ -1,7 +1,7 @@
 // import { handleJokeDetailsDisplay } from "./handlers/jokes/handleJokeDetailsDisplay.js";
 import { handleProductsDisplay } from "./handlers/handleProductsRender.js";
 import { handleProductDetailsDisplay } from "./handlers/handleProductRenderDetails.js";
-import { handleDomContentLoaded } from "./handlers/handlecart.js";
+import { handleDomContentLoaded } from "./handlers/handleCart.js";
 import { handleCollectionDisplay } from "./handlers/handleCollectionProducts.js";
 
 function router() {
