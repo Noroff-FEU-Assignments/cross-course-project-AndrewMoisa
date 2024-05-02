@@ -14,5 +14,5 @@ export async function fetchCategories(catId) {
     return results;
   }
 
-  throw new Error(`There was an error fetching the product with id: ${id}`);
+  throw new Error(`There was an error fetching the product with id: ${catId}`);
 }
