@@ -12,3 +12,7 @@ export async function fetchProducts(pageCount) {
 
   throw new Error("There was an error fetching the jokes");
 }
+
+function bob() {
+  console.log(frog);
+}
