@@ -7,7 +7,6 @@ import { handleAddToCartButtons } from "./handleAddToCartButtons.js";
 
 export async function handleProductDetailsDisplay() {
   const id = getQueryParam("id");
-
   if (!id) {
     window.location.href = "/";
   }
