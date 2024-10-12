@@ -1,58 +1,62 @@
-Rainydays
+# Rainydays
 
-image
+<p align="left"><img height="400px" src="https://github.com/user-attachments/assets/7140a0fa-6be3-4478-b56f-6cb47edc80e0" alt="home page" /></p>
 
-A simple overview of the use/purpose of the project.
-Description
 
-Add a more detailed description of what your project entails and set out to do.
+[Live Demo: Rainydays](am-rainydays.netlify.app)
 
-You can add some bullet points if you'd like to:
+---
 
-    List item 1
-    List item 2
-    List item 3
+## Project Overview
 
-Built With
+Welcome to **Rainydays**, an online clothing store designed to offer a seamless and dynamic shopping experience. This website has undergone significant improvements over time, focusing on enhanced functionality and user experience.
 
-You can list a the tech stack that you've used over here
+As part of my Front-End development studies, I built this dynamic e-commerce web application using **WordPress** as a headless CMS, integrated with **WooCommerce** to manage the product catalog. By decoupling the front-end from WordPress, I created a custom REST API to facilitate real-time data exchange between the front-end and back-end.
 
-    React.js
-    Bootstrap
+---
 
-Getting Started
-Installing
+## Built With:
 
-This is where you list how to get the project started. It typically just includes telling a person to clone the repo and then to install the dependencies e.g.
+- WordPress (Headless CMS)
+- WooCommerce
+- HTML5
+- CSS
+- JavaScript
 
-    Clone the repo:
+---
 
-git clone git@github.com:NoroffFEU/portfolio-1-example.git
+## Features:
 
-    Install the dependencies:
+- **WordPress REST API Integration**: The project leverages the WordPress REST API, specifically WooCommerce's API, to fetch product details dynamically, ensuring real-time updates and smooth data exchange.
+- **Individual Product Pages**: Each product listed on the store has a dedicated detailed page, showcasing its description, price, and images, with an intuitive layout for users.
+- **Responsive Design**: The website is fully responsive, providing a seamless experience across various devices, including desktops, tablets, and smartphones.
+- **Headless CMS Architecture**: Decoupling the front-end from WordPress allows more flexibility and faster load times, improving the overall user experience.
 
-npm install
+---
 
-Running
 
-Here is where you detail how to run the app. It typically involves the commands you'd need to run to start the project e.g.
+## Getting Started
 
-To run the app, run the following commands:
+### Installation
 
-npm run start
+1. Clone the repository:
 
-Contributing
+   ```bash
+   gh repo clone Noroff-FEU-Assignments/cross-course-project-AndrewMoisa
 
-Here you can detail any information you want to provide regarding contributing to the project. For big projects you will usually have a separate CONTRIBUTING.md and link to it, but for smaller projects you can simply include instructions here. These instructions can simply detail the process you want a person to take, such as to make sure to open a pull request so code can be reviewed.
-Contact
+   ```
 
-This is where you can leave your social links for people to contact you, such as a LinkedIn profile or Twitter link e.g.
+2. Install the dependencies:
 
-My Twitter page
+   ```bash
+   npm install
+   ```
 
-My LinkedIn page
-License
+3. Running
+    ```bash
+    npm run start
+    ```
 
-You can link to your license file here if you're using one, or mention what license the codebase falls under. If you're unsure then you can simply delete this section.
-Acknowledgments
-This is where you can add any acknowledgements if you'd like, such as to people who have helped you or any code snippets you'd like to mention. You can delete this section if you don't have any acknowledgements to make.
+## Contact
+
+[LinkedIn](https://www.linkedin.com/in/andrei-moisa-214b75279/)
