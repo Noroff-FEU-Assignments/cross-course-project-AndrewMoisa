@@ -3,7 +3,7 @@
 <p align="left"><img height="400px" src="https://github.com/user-attachments/assets/7140a0fa-6be3-4478-b56f-6cb47edc80e0" alt="home page" /></p>
 
 
-[Live Demo: Rainydays](am-rainydays.netlify.app)
+[Live Demo: Rainydays](https://am-rainydays.netlify.app)
 
 ---
 
