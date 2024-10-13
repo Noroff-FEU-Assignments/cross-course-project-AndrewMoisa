@@ -17,12 +17,14 @@ As part of my Front-End development studies, I built this dynamic e-commerce web
 
 ## Built With:
 
-- WordPress (Headless CMS)
-- WooCommerce
-- HTML5
-- CSS
-- JavaScript
-
+- **WordPress** (for content management)
+- **WordPress REST API** (for data fetching)
+- **WooCommerce**
+- **HTML5**
+- **CSS**
+- **JavaScript**
+- **Hotjar** (for user behavior analysis)
+- **Netlify** (for deployment)
 ---
 
 ## Features:
